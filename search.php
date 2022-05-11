@@ -5,7 +5,7 @@
  * @date 5/11/2022 11:47 PM
  */
 session_start();
-$db = mysqli_connect("localhost", "root", "", "data") or die(mysqli_connect_error());
+require_once 'db.php';
 
 // search query using the keyword 'q'  and set it to session
 if(isset($_POST['q']) && !empty($_POST['q'])) {
@@ -75,7 +75,7 @@ if ($current_page > $total_pages){
                                 <?php
                         // if current page will be greater than 1 it shows <- Previous text otherwise it wil be changed to disabled
                         if($current_page > 1){
-                            echo "<li class='page-item'><a class='page-link'  href='?page=" . ($current_page - 1) . "'>&laquo; Previous</a></li>";
+                            echo "<li class='page-item'><a class='page-link'  ?page=" . ($current_page - 1) . "'>&laquo; Previous</a></li>";
                         }else{
                             echo "<li class='page-item disabled'><span class='page-link'>&laquo; Previous</span></li>";
                         }
