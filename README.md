@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS people (
 	name VARCHAR(50) NOT NULL, 
 	job VARCHAR(50) NOT NULL, 
 	country VARCHAR(50) NOT NULL, 
-	brithday DATE L,
+	brithday DATE,
 	PRIMARY KEY (id)
 ); 
 
