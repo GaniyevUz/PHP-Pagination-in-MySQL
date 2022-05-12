@@ -5,7 +5,7 @@
 **Simple PHP Pagination With MySQL **
 --
 
-[online  DEMO version is here](http://jahongir.ga/pagination-example/)
+[live  DEMO version is here](http://jahongir.ga/pagination-example/)
 
 **Database Credentials**
 
